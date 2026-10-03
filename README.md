@@ -1,5 +1,7 @@
 # ksd-test-framework
 
+![tests](https://github.com/g-alex/ksd-test-framework/actions/workflows/tests.yml/badge.svg)
+
 UI-тестовый фреймворк для интернет-магазина [ksd.ua](https://ksd.ua/) — финальный проект курса AQA (Dan.It Education).
 
 **Стек:** Java 26 · Maven · Selenide (Selenium WebDriver) · TestNG · Allure · REST Assured (клиент TestRail API)
