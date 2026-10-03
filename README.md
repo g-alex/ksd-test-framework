@@ -23,7 +23,7 @@ allure serve target/allure-results   # отчёт Allure
 ```
 
 TestRail-интеграция опциональна, включается переменными окружения:
-`TESTRAIL_EMAIL`, `TESTRAIL_API_KEY`, `TESTRAIL_URL` (по умолчанию — инстанс проекта).
+`TESTRAIL_URL`, `TESTRAIL_EMAIL`, `TESTRAIL_API_KEY`.
 Без них тесты выполняются, отправка результатов пропускается.
 
 ## Учебный репозиторий

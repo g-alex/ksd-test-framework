@@ -8,14 +8,13 @@ import static io.restassured.RestAssured.given;
 
 public class TestrailApi {
 
-    private static final String BASE_API_URL = System.getenv()
-            .getOrDefault("TESTRAIL_URL", "https://gerashka.testrail.io/index.php?/api/v2/");
+    private static final String BASE_API_URL = System.getenv("TESTRAIL_URL");
     private static final String EMAIL = System.getenv("TESTRAIL_EMAIL");
     private static final String API_KEY = System.getenv("TESTRAIL_API_KEY");
 
     public static void sendResult(int statusId, int testCaseId, int runId) {
-        if (EMAIL == null || API_KEY == null) {
-            System.out.println("TestRail integration skipped: set TESTRAIL_EMAIL and TESTRAIL_API_KEY env vars");
+        if (EMAIL == null || API_KEY == null || BASE_API_URL == null) {
+            System.out.println("TestRail integration skipped: set TESTRAIL_URL, TESTRAIL_EMAIL and TESTRAIL_API_KEY env vars");
             return;
         }
         String credentials = Base64.getEncoder().encodeToString((EMAIL + ":" + API_KEY).getBytes());
