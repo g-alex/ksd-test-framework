@@ -1,6 +1,5 @@
 # ksd-test-framework
-
-![tests](https://github.com/g-alex/ksd-test-framework/actions/workflows/tests.yml/badge.svg)
+[![tests](https://github.com/g-alex/ksd-test-framework/actions/workflows/tests.yml/badge.svg)](https://github.com/g-alex/ksd-test-framework/actions/workflows/tests.yml)
 
 UI-тестовый фреймворк для интернет-магазина [ksd.ua](https://ksd.ua/) — финальный проект курса AQA (Dan.It Education).
 
